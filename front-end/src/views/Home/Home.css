@@ -1,0 +1,109 @@
+* {
+  margin-top: 0;
+}
+
+#title-bar {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #772BA1;
+    margin-top: 20px;
+}
+
+/* Tabs */
+
+.btn-title {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 0 auto;
+}
+
+#share {
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  color: #772BA1;
+  margin: auto 0 0 auto;
+  padding: 10px 25px 10px 25px;
+  background-color: #D4EC70;
+  border: #d4ec70;
+}
+
+#respond {
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  color: #d4ec70;
+  margin: auto auto 0 0;
+  padding: 10px 25px 10px 25px;
+  background-color: #772BA1;
+  border: #772BA1;
+}
+
+/* How to Share Display */
+#myShareDIV {
+  display: block;
+  width: 100%;
+  height: 700px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #D4EC70;
+}
+
+/* How to Respond Display */
+#myRespondDIV {
+  display: none;
+  width: 100%;
+  height: 700px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #772BA1;
+}
+
+.share-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #d4ec70;
+  margin-top: 0px;
+}
+
+.share-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 30%;
+}
+
+footer {
+  /* max-width: 30%; */
+}
+
+.primary-share-text {
+  padding: 10px;
+  text-align: center;
+  font-family:  'Righteous', cursive;
+  font-size: 20px;
+}
+
+#join-us {
+  border-radius: 50%;
+  border: solid 5px black;
+  /* margin: auto; */
+  max-width: 80%;
+}
+
+#typing {
+  border-radius: 50%;
+  border: solid 5px black;
+  max-width: 75%;
+}
+
+#sharing {
+  border-radius: 50%;
+  border: solid 5px black;
+  background-color: red;
+  max-width: 75%;
+}

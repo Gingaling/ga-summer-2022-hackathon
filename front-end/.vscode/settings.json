@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#233207",
+        "titleBar.activeBackground": "#31460A",
+        "titleBar.activeForeground": "#F7FCED"
+    },
+    "marquee.widgets.npm-stats.packageNames": [
+        "ga-summer-2022-hackathon"
+    ]
+}
