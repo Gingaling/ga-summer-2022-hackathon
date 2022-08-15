@@ -1,3 +1,52 @@
+* {
+    background-color: #5081b6;
+    background-color: #4D92F0;
+}
+
+.all-container {
+    background-color: #4D92F0;
+}
+
+header {
+    background-color: #4D92F0;
+}
+
+
 body {
     background-image: src("https://i.imgur.com/rbM2kiY.jpg");
+    background-color: #4D92F0;
+}
+
+.title-bar-home {
+    background-color: #4D92F0;
+    font-family: "Righteous", cursive;
+    font-size: 4rem;
+    float: right;
+    font-weight: bolder;
+    color: white;
+    /* margin-top: 20px; */
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+#splash-image {
+    width: 200%;
+    object-fit: contain;
+}
+
+.pic-cell {
+    width: 50%;
+}
+
+#pic-block {
+    display: flex;
+    flex-direction: row;
+    background-color: #4D92F0;
+    padding: 100px 0 0 0;
+    /* margin: auto; */
+    max-height: 100%;
+    object-fit: contain;
 }

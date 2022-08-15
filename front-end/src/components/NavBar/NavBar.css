@@ -1,0 +1,29 @@
+
+.App {
+  text-align: center;
+  margin: auto;
+}
+ 
+header {
+  display: flex;
+  flex-direction: row;
+  font-family:  'Righteous', cursive;
+  font-size: 20px;
+  justify-content: space-evenly;
+  padding: 20px 20px 20px 20px;
+}
+
+.label{
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+ 
+.LinkStyle {
+  padding: 5px;
+  background-color:#772BA1;
+  border-radius: 5px;
+    text-decoration: none;
+    color:  #D4EC70;
+}

@@ -1,13 +1,12 @@
 
-.App {
+/* .App {
   text-align: center;
   margin: auto;
-}
+} */
  
 header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   font-family:  'Righteous', cursive;
   font-size: 20px;
   justify-content: space-evenly;
@@ -21,6 +20,14 @@ header {
   padding: 5px;
 }
  
+.LinkStyle {
+  padding: 5px;
+  background-color:#772BA1;
+  border-radius: 5px;
+    text-decoration: none;
+    color:  #D4EC70;
+}
+/* 
 .input{
   font-size: larger;
   padding: 5px;
@@ -58,4 +65,4 @@ header {
   width: fit-content;
   height: 50px;
   padding: 5px;
-}
+} */
