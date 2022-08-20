@@ -50,3 +50,16 @@ section {
     max-height: 100%;
     object-fit: contain;
 }
+
+img.logo {
+    background-color: #4D92F0;
+    padding-right: 30px;
+    width: 4rem;
+}
+
+#right {
+    background-color: #4D92F0;
+    /* line-height: 70%; */
+   /* margin-right: 20px;; */
+   text-align: right;
+}

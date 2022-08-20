@@ -27,42 +27,13 @@ header {
     text-decoration: none;
     color:  #D4EC70;
 }
-/* 
-.input{
-  font-size: larger;
-  padding: 5px;
-  margin: 2px;
-  
+
+.login {
+  background-color: aqua;
+  position: float;  
 }
-.btn{
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-  font-size: larger;
-  display: block;
-  padding: 5px;
-  margin: 10px auto;
+
+.logout {
+  background-color: aqua;
+  position: float;
 }
- 
-.messages{
-  display: flex;
-  justify-content: center;
-}
- 
-.error{
-  display: block;
-  background-color: red;
-  color: white;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
-}
- 
-.success{
-  display: block;
-  background-color: lightblue;
-  color: black;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
-} */
