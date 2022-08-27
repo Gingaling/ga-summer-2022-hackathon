@@ -1,16 +1,16 @@
 import React from 'react';
 import './NavBar.css';
-import { Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import Home from '../Home/Home';
+import Form from '../Forms/Form';
 import About from '../About/About';
-import Post from '../Post/Post';
-import BlogDetails from '../BlogDetails/BlogDetails';
+// import Posts from '../Posts/Posts';
+import PostsDetails from '../PostsDetails/PostsDetails';
 import Contact from '../Contact/Contact';
-import LoginButton from '../LoginButton/LoginButton';
-import LogoutButton from '../LogoutButton/LogoutButton';
+import Registration from '../Register/Registration';
 import Profile from '../Profile/Profile';
-import NotFound from '../NotFound/NotFound';
+// import NotFound from '../NotFound/NotFound';
 
 // import Posts from '../Posts/Posts';
 
@@ -29,7 +29,7 @@ export default function NavBar() {
         <Link to="/post" className="LinkStyle" id="even">Create a Post</Link>
       </div>
       <div>
-        <Link to="/blogs/:id" className="LinkStyle">Current Posts</Link>
+        <Link to="/posts/:id" className="LinkStyle">Current Posts</Link>
       </div>
       <div>
         <Link to="/HowTo" className="LinkStyle" id="even">How to Share/Respond</Link>
@@ -37,14 +37,9 @@ export default function NavBar() {
        <div>
         <Link to="/Contact" className="LinkStyle">Contact Us</Link>
       </div>
-       {/* <div>
-        <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
-      </div> */}
        <div>
-        <Link to="/Profile" className="LinkStyle" id="even">Profile</Link>
+        <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
       </div>
-      {<LoginButton />}
-      {<LogoutButton />}
     </header>
 		<div>
     <Routes>
@@ -57,12 +52,12 @@ export default function NavBar() {
         element={<HomePage />}
 			/>
       <Route
-        exact path='/Post'
-        element={<Post />}
+        path='/post'
+        element={<Form />}
 			/>
       	<Route
-        path='/blogs:id'
-        element={<BlogDetails />}
+        path='/posts:id'
+        element={<PostsDetails />}
 			/>
       	<Route
         path='/HowTo'
@@ -71,15 +66,15 @@ export default function NavBar() {
       <Route
         path='/Contact'
         element={<Contact />}
-			/>
-      <Route
+      />
+      <Route      
         path='/Login'
-        element={<LoginButton />}
+        element={<Registration />}
 			/>
-       <Route
+       {/* <Route
         path='/Profile'
         element={<Profile />}
-			/>
+			/> */}
       {/* <Route
         path='/*'
         element={<NotFound />}
