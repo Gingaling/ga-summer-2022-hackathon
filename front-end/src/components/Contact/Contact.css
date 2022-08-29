@@ -1,0 +1,25 @@
+.top-part {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.team {
+    color: purple;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.UI {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.Development {
+    margin-top: ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

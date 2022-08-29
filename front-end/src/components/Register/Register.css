@@ -3,6 +3,10 @@
     margin-top: 2rem;
 }
 
+body {
+    border: 3px solid blue;
+}
+
 h2 {
     font-size: 3rem;
 }
@@ -20,17 +24,21 @@ Form {
     line-height: 30px;
 }
 
-Form.Control {
-    padding-left: 20px`;
-}
+/* Form.Control {
+    padding-left: 20px;
+    Form.Label {
+        margin: 50%;
+    }
+} */
 
-button#register  {
-    width: 5%;
+#btn-register  {
+    text-align: center;
+    margin: 0 0 2rem 15.5em;
+    width: 6%;
     height: 30px;
     font-weight: bolder;
-    background-color: rgb(155, 187, 233);
-    border-radius: 15px 0 15px 0;
+    background-color: rgb(56, 133, 240);
+    border-radius: 25% 0 25% 0;
     font-size: 1rem;
-    margin-top: 2rem;
-    /* border: 2px solid black; */
+    margin-top: 2rem
 }

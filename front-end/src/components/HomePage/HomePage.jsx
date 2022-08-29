@@ -8,7 +8,12 @@ export default function HomePage() {
     <div className="all-container">
     <div id="right">
       <img className="logo" alt="" src="https://i.imgur.com/dK7TCaS.png" />
-      <p className="title-bar-home">the LeftOver (EXCESSieve?)</p></div>
+<div className="titleBar">
+      <p className="title-bar-home">the LeftOver</p></div>
+      <div className="tagline">
+        <p>(your trash, my treasure - building a sustainable future piece by piece</p>
+        </div>
+        </div>
 
       <section id="pic-block">
       <div className='pic-cell'>

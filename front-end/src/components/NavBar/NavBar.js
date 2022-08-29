@@ -18,6 +18,7 @@ export default function NavBar() {
 
 	return (
     <>
+    <div className="main">
     <header>
       <div>
         <Link to="/" className="LinkStyle" id="even">Home</Link>
@@ -41,6 +42,7 @@ export default function NavBar() {
         <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
       </div>
     </header>
+    </div>
 		<div>
     <Routes>
 			<Route
@@ -70,16 +72,7 @@ export default function NavBar() {
       <Route      
         path='/Login'
         element={<Registration />}
-			/>
-       {/* <Route
-        path='/Profile'
-        element={<Profile />}
-			/> */}
-      {/* <Route
-        path='/*'
-        element={<NotFound />}
-      /> */}
-        
+			/>     
 		</Routes>
 	  </div>
     </>
