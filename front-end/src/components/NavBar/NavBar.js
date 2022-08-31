@@ -3,16 +3,15 @@ import './NavBar.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import Home from '../Home/Home';
-import Form from '../Forms/Form';
 import About from '../About/About';
 // import Posts from '../Posts/Posts';
 import PostsDetails from '../PostsDetails/PostsDetails';
+import Form from '../Forms/Form';
 import Contact from '../Contact/Contact';
 import Registration from '../Register/Registration';
-import Profile from '../Profile/Profile';
-// import NotFound from '../NotFound/NotFound';
-
-// import Posts from '../Posts/Posts';
+import AuthComponent from '../AuthComponent'
+import FreeComponent from '../FreeComponent'
+import ProtectedRoutes from "../ProtectedRoutes";
 
 export default function NavBar() {
 
@@ -23,6 +22,10 @@ export default function NavBar() {
       <div>
         <Link to="/" className="LinkStyle" id="even">Home</Link>
       </div>
+      <section id="navigation">
+        <a href="/free">Free Component</a>
+        <a href="/auth">Auth Component</a>
+      </section>
       <div>
         <Link to="/about" className="LinkStyle">About the LeftOver</Link>
       </div>
@@ -72,7 +75,16 @@ export default function NavBar() {
       <Route      
         path='/Login'
         element={<Registration />}
-			/>     
+			/>
+       <Route
+       exact path="/free"
+       element={<FreeComponent />}
+       />
+      <ProtectedRoutes
+      path="/auth"
+      element={<AuthComponent />}
+      />
+
 		</Routes>
 	  </div>
     </>

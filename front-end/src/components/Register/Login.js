@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
-import Form from "react-bootstrap/Form"
-import Button from "react-bootstrap/Button"
-import './Login.css'
-import axios from 'axios'
-import Cookies from "universal-cookie"
-
-const cookies = new Cookies()
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+import axios from "axios";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 export default function Login() {
   // initial state
-  const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
@@ -47,21 +43,8 @@ export default function Login() {
 
   return (
     <>
-     <div className="main">
       <h2>Login</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
- {/* userName */}
-        <Form.Group controlId="formBasicUserName">
-          <Form.Label>Username</Form.Label>
-          <Form.Control
-            type="userName"
-            name="userName"
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            placeholder="Enter username"
-          />
-        </Form.Group>
-
         {/* email */}
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -87,7 +70,6 @@ export default function Login() {
         </Form.Group>
 
         {/* submit button */}
-         <div id="btn-register">
         <Button
           variant="primary"
           type="submit"
@@ -95,7 +77,7 @@ export default function Login() {
         >
           Login
         </Button>
-</div>
+
         {/* display success message */}
         {login ? (
           <p className="text-success">You Are Logged in Successfully</p>
@@ -103,7 +85,6 @@ export default function Login() {
           <p className="text-danger">You Are Not Logged in</p>
         )}
       </Form>
-      </div>
     </>
   );
 }
