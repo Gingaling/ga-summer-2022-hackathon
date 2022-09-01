@@ -32,7 +32,7 @@ function Home() {
               
                 <img alt="" id="sharing" src="https://i.imgur.com/qr0BK31.png"/>
                 <footer className="primary-share-text"  id="card-label">3. Find your own leftover.</footer>
-                <footer className="primary-share-text">Within a short of time, you will have disposed of your left over goods (clothing, appliances, plants, even food). Now take some time, to find what you have been lookng for.</footer></div>
+                <footer className="primary-share-text">In a short while, you will have disposed of your left over goods (clothing, appliances, plants, even food). Now take some time, to find what you have been lookng for.</footer></div>
             </div>
           </section>
 
@@ -54,7 +54,7 @@ function Home() {
               
                 <img alt="" id="sharing2" src="https://i.imgur.com/4CuSeXF.png"/>
                 <footer className="secondary-share-text"  id="card-label2">3. Share or find your own leftover.</footer>
-                <footer className="secondary-share-text">Within a short of time, you will have disposed of your left over goods (clothing, appliances, plants, even food).</footer></div>
+                <footer className="secondary-share-text">In a short while, you will have disposed of your left over goods (clothing, appliances, plants, even food).</footer></div>
             </div>
           </section>
     </section>

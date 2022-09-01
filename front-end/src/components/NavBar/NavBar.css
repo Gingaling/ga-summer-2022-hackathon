@@ -12,12 +12,12 @@
 header {
   background-color: rgb(80, 153, 205);
   display: flex;
+  margin-top: 40px;
   height: 1rem;
   line-height: 5px;
   flex-direction: row;
   font-family:  'Righteous', cursive;
   font-size: 15px;
-  margin: px;
   justify-content: space-evenly;
   padding: 0 10px 25px 10px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 import { Route } from 'react-router-dom';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();

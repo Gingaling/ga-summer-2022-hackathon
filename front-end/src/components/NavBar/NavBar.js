@@ -9,9 +9,9 @@ import PostsDetails from '../PostsDetails/PostsDetails';
 import Form from '../Forms/Form';
 import Contact from '../Contact/Contact';
 import Registration from '../Register/Registration';
-import AuthComponent from '../AuthComponent'
+// import AuthComponent from '../AuthComponent'
 import FreeComponent from '../FreeComponent'
-import ProtectedRoutes from "../ProtectedRoutes";
+// import ProtectedRoutes from "../ProtectedRoutes";
 
 export default function NavBar() {
 
@@ -80,12 +80,12 @@ export default function NavBar() {
        exact path="/free"
        element={<FreeComponent />}
        />
-      <ProtectedRoutes
+		</Routes>
+      {/* <ProtectedRoutes
       path="/auth"
       element={<AuthComponent />}
-      />
+      /> */}
 
-		</Routes>
 	  </div>
     </>
 	);

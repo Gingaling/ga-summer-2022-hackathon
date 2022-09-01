@@ -23,7 +23,7 @@ body {
 }
 
 section {
-    background-color: #4D92F0;
+    background-color: white;
     display: flex;
     flex-direction: row;
 }
