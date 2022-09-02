@@ -86,11 +86,11 @@ export default function Register() {
         </Button>
 
         {/* display success message */}
-        {/* {register ? (
+        {register ? (
           <p className="text-success">You Are Registered Successfully</p>
         ) : (
           <p className="text-danger">You Are Not Registered</p>
-        )} */}
+        )} 
       </Form>
     </>
   );
