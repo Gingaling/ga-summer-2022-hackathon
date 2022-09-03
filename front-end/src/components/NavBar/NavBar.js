@@ -6,9 +6,11 @@ import Home from '../Home/Home';
 import About from '../About/About';
 // import Posts from '../Posts/Posts';
 import PostsDetails from '../PostsDetails/PostsDetails';
+import Login from '../Register/Login';
+
 import Form from '../Forms/Form';
 import Contact from '../Contact/Contact';
-import Account from '../Register/Account';
+// import Account from '../../Account';
 // import AuthComponent from '../AuthComponent'
 import FreeComponent from '../FreeComponent'
 // import ProtectedRoutes from "../ProtectedRoutes";
@@ -74,7 +76,7 @@ export default function NavBar() {
       />
       <Route      
         path='/Login'
-        element={<Account />}
+        element={<Login />}
 			/>
        <Route
        exact path="/free"

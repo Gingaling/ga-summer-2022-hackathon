@@ -86,7 +86,7 @@ export default function Register() {
         </Button>
 
         {/* display success message */}
-        {register ? (
+        {Register ? (
           <p className="text-success">You Are Registered Successfully</p>
         ) : (
           <p className="text-danger">You Are Not Registered</p>

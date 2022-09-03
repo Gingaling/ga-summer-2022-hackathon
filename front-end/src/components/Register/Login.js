@@ -6,6 +6,7 @@ const cookies = new Cookies();
 
 export default function Login() {
   // initial state
+  const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [login, setLogin] = useState(false);
@@ -17,8 +18,9 @@ export default function Login() {
     // set configurations
     const configuration = {
       method: "post",
-      url: "https://ga-summer-2022-hackathon.herokuapp.com/login",
+      url: " https://ga-summer-2022-hackathon.herokuapp.com/login",
       data: {
+        userName,
         email,
         password,
       },
@@ -45,6 +47,18 @@ export default function Login() {
     <>
       <h2>Login</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
+{/* username */}
+        <Form.Group controlId="formBasicUsername">
+          <Form.Label>Username</Form.Label>
+          <Form.Control
+            type="username"
+            name="username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            placeholder="Enter username"
+          />
+        </Form.Group>
+
         {/* email */}
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
