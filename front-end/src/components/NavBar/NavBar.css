@@ -1,36 +1,52 @@
-
-.App {
-  text-align: center;
-  margin: auto;
-} 
-
-.main {
-  background-color: rgb(80, 153, 205);
+* {
+  background-color:  #4D92F0;
+  font-family: "Righteous", cursive;
+   vertical-align: baseline;
 }
 
- 
-header {
-  background-color: rgb(80, 153, 205);
+.Menu {
   display: flex;
-  margin-top: 40px;
-  height: 1rem;
-  line-height: 5px;
   flex-direction: row;
-  font-family:  'Righteous', cursive;
-  font-size: 15px;
-  justify-content: space-evenly;
-  padding: 0 10px 25px 10px;
+  vertical-align: baseline;
+  background-color: #4D92F0;
+  justify-content: flex-start;
+  font-family: "Righteous", cursive;
+  padding: px;
+  border: 4px solid white;
 }
+
+#menu-sstyle {
+
+}
+
 
 #even {
   color: #772BA1;
   background-color: #D4EC70;
 }
- 
+
 .LinkStyle {
-  padding: 15px;
-  background-color:#772BA1;
-  border-radius: 50% 0 50% 0;
-    /* text-decoration: none; */
-    /* color:  #D4EC70; */
+  padding: 10px;
+  max-width: 150px;
+  margin: 15px 15px 0 15px; 
+  border-radius: 0 50% 0 50%;
+  /* text-decoration: none; */
+  /* color:  #D4EC70; */
+}
+
+
+.leftover {
+  justify-content: baseline;
+  font-size: 6rem;
+  font-family: "Righteous", cursive;
+  /* font-variant: small-caps; */
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin: 0 0 auto 0;
+  padding: 10px;
+  color: white;
+  background-color: #4D92F0;
+  width: 40%;
+  line-height: 40px;
+  float: right
 }

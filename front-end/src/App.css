@@ -1,40 +1,16 @@
 
-/* .App {
-  text-align: center;
-  margin: auto;
-} */
  
-header {
-  background-color: rgb(80, 153, 205);;
-  display: flex;
+ header {
+    display: flex;
   flex-direction: row;
-  font-family:  'Righteous', cursive;
-  font-size: 20px;
-  justify-content: space-evenly;
-  padding: 20px 20px 20px 20px;
+  justify-content: space-around;
 }
 
-.label{
-  display: block;
-  font-size: larger;
-  color: white;
-  padding: 5px;
-}
- 
 .LinkStyle {
-  padding: 5px;
+  display: block;
   background-color:#772BA1;
+  font-family: "Righteous", cursive;
   border-radius: 5px;
     text-decoration: none;
     color:  #D4EC70;
-}
-
-.login {
-  background-color: aqua;
-  position: float;  
-}
-
-.logout {
-  background-color: aqua;
-  position: float;
 }

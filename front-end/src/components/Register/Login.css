@@ -16,7 +16,7 @@ Form {
 #formBasicPassword {
     font-size: 1rem;
     border-radius: 0 15px 0 15px;
-    margin: 1rem 2rem 0 2rem;
+    /* margin: 1rem 2rem 0 2rem; */
     line-height: 30px;
 }
 

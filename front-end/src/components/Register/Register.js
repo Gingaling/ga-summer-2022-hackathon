@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
+// import './Login.css';
 
 export default function Register() {
   // initial state
@@ -16,7 +17,7 @@ export default function Register() {
     // set configurations
     const configuration = {
       method: "post",
-      url: "https://ga-summer-2022-hackathon.herokuapp.com/register",
+      url: "https://hackathon-summer-2022.herokuapp.com/register",
       data: {
         userName,
         email,
@@ -87,7 +88,7 @@ export default function Register() {
 
         {/* display success message */}
         {Register ? (
-          <p className="text-success">You Are Registered Successfully</p>
+          <p className="text-success">Success! You Are Registered!</p>
         ) : (
           <p className="text-danger">You Are Not Registered</p>
         )} 

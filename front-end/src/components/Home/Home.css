@@ -1,38 +1,18 @@
 * {
-  margin-top: 0;
-  background-color:rgb(80, 153, 205);;
-}
-body {
-    background-color:rgb(80, 153, 205);;
-}
-
-#title-bar-how-to {
-  height: 6rem;
-  background-color: white;
-  font-family: 'Righteous', cursive;
-  font-size: 3.5rem;
-  text-align: center;
-  font-weight: bolder;
-  color: #772BA1;
-  /* margin-top: 7rem; */
-  margin-bottom: 0;
-  padding-bottom: 0;
+  /* background-color: rgb(56, 133, 240); */
 }
 
 /* Tabs */
-
 .btn-title {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(2, 2, 2);
-  margin: 0 auto 0 auto;
-  padding: ;
+  background-color: white`;
+  text-align: center;
 }
 
 #share {
   font-family: 'Righteous', cursive;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #772BA1;
+  font-weight: bolder;
   margin: auto;
   padding: 5px 25px 10px 25px;
   background-color: #D4EC70;
@@ -41,7 +21,7 @@ body {
 
 #respond {
   font-family: 'Righteous', cursive;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #d4ec70;
   margin: auto;
   padding: 5px 25px 10px 25px;
@@ -49,26 +29,27 @@ body {
   border: #772BA1;
 }
 
+#title-bar-how-to {
+  height: 9rem;
+  font-family: 'Righteous', cursive;
+  background-color: white;
+  font-size: 5rem;
+  padding: 10px 0 40px 0;
+  text-align: center;
+  font-weight: bolder;
+  color: #772BA1;
+}
+
 /* How to Share Display */
 #myShareDIV {
   position: absolute;
-  margin-top: 3rem;;
-  width: 100%;
-  height: 80%;
-  padding: 5px 0;
-  text-align: center;
   background-color: #D4EC70;
 }
 
 /* How to Respond Display */
 #myRespondDIV {
-  display: none;
   position: absolute;
-  margin-top: 3rem;;
-  width: 100%;
-  height: 80%;
-  padding: 5px 0;
-  text-align: center;
+  display: none;
   background-color: #772BA1;
 }
 
@@ -76,40 +57,34 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 60px 0;
+  padding: 65px 0 0 0;
   text-align: center;
   background-color: #d4ec70;
-  margin-top: 0px;
 }
 
 .respond-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 60px 0;
+  padding: 65px 0 0 0;
   text-align: center;
   background-color: #772BA1;
-  margin-top: 0px;
 }
 
 .share-card {
   display: flex;
-  /* background-color: black; */
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 50%;
-  margin-top: 10px;
   margin: auto;
   background-color: #d4ec70;
 }
 
 .respond-card {
   display: flex;
-  /* background-color: black; */
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 50%;
-  margin-top: 10px;
   margin: auto;
   background-color: #772BA1;
 }
@@ -117,31 +92,25 @@ body {
 .primary-share-text {
   color: #772BA1;
   background-color: #d4ec70;
-  padding: 10px;
+  padding-top: 40px;
   text-align: center;
   font-family: 'Righteous', cursive;
   font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 30px;
   margin: auto;
-  width: 80%;
+  width: 75%;
 }
 
 .secondary-share-text {
   color: #d4ec70;
   background-color: #772BA1;
-  padding: 10px;
+  padding-top: 40px;
   text-align: center;
   font-family: 'Righteous', cursive;
   font-size: 20px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 30px;
   margin: auto;
-  width: 80%;
-}
-
-footer {
-  width: 90%;
+  width: 75%;
 }
 
 #card-label {
@@ -161,31 +130,29 @@ footer {
 }
 
 #join-us {
-  /* border: 5px solid #772BA1; */
-  background-color: #d4ec70;
+  background-color: #772BA1;
   box-shadow: 5px 5px 50px #772BA1;
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
 #join-us2 {
-  /* border: 5px solid #772BA1; */
   background-color: #d4ec70;
   box-shadow: 5px 5px 50px #d4ec70;
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
 #typing {
-  background-color: #d4ec70;
+  background-color: #772BA1;
   box-shadow: 5px 5px 50px #772BA1;
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
@@ -194,26 +161,26 @@ footer {
   box-shadow: 5px 5px 50px #d4ec70;
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
 #sharing {
-  background-color: #d4ec70;
+  background-color: #772BA1;
   box-shadow: 5px 5px 50px #772BA1;
-  background-color: rgb(80, 153, 205);
+  background-color:  rgb(56, 133, 240);
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
 #sharing2 {
   background-color: #d4ec70;
   box-shadow: 5px 5px 50px #d4ec70;
-  background-color: rgb(80, 153, 205);
+  background-color:  rgb(56, 133, 240);
   margin: auto;
   margin-bottom: 50px;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 50%;
 }

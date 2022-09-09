@@ -6,49 +6,51 @@ import Home from '../Home/Home';
 import About from '../About/About';
 // import Posts from '../Posts/Posts';
 import PostsDetails from '../PostsDetails/PostsDetails';
-import Login from '../Register/Login';
-
 import Form from '../Forms/Form';
 import Contact from '../Contact/Contact';
-// import Account from '../../Account';
-// import AuthComponent from '../AuthComponent'
+import Account from '../Register/Account';
+import AuthComponent from '../AuthComponent'
 import FreeComponent from '../FreeComponent'
 // import ProtectedRoutes from "../ProtectedRoutes";
+
 
 export default function NavBar() {
 
 	return (
-    <>
-    <div className="main">
-    <header>
-      <div>
-        <Link to="/" className="LinkStyle" id="even">Home</Link>
-      </div>
-      <section id="navigation">
-        <a href="/free">Free Component</a>
-        <a href="/auth">Auth Component</a>
-      </section>
-      <div>
-        <Link to="/about" className="LinkStyle">About the LeftOver</Link>
-      </div>
-      <div>
-        <Link to="/post" className="LinkStyle" id="even">Create a Post</Link>
-      </div>
-      <div>
-        <Link to="/posts/:id" className="LinkStyle">Current Posts</Link>
-      </div>
-      <div>
-        <Link to="/HowTo" className="LinkStyle" id="even">How to Share/Respond</Link>
-      </div>
-       <div>
-        <Link to="/Contact" className="LinkStyle">Contact Us</Link>
-      </div>
-       <div>
-        <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
-      </div>
-    </header>
-    </div>
-		<div>
+    <>     
+      <header className="Menu">
+        <div>
+          <Link to="/" className="LinkStyle" id="even">Home</Link>
+        </div>
+        <div id="navigation">
+          <a href="/free">Free Component</a><br />
+          <a href="/auth">Auth Component</a>
+        </div>
+        <div>
+          <Link to="/about" className="LinkStyle">About the LeftOver</Link>
+        </div>
+        <div>
+          <Link to="/post" className="LinkStyle" id="even">Create a Post</Link>
+        </div>
+        <div>
+          <Link to="/posts/:id" className="LinkStyle">Current Posts</Link>
+        </div>
+        <div>
+          <Link to="/HowTo" className="LinkStyle" id="even">How to Share/Respond</Link>
+        </div>
+        <div>
+          <Link to="/Contact" className="LinkStyle">Contact Us</Link>
+        </div>
+        <div>
+          <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
+        </div>
+
+        {/* <div className="leftover-header"> */}
+        <div className="leftover">
+      The Leftover
+        </div>
+        {/* </div> */}
+      </header>
     <Routes>
 			<Route
         path='/about'
@@ -76,7 +78,7 @@ export default function NavBar() {
       />
       <Route      
         path='/Login'
-        element={<Login />}
+        element={<Account />}
 			/>
        <Route
        exact path="/free"
@@ -87,8 +89,6 @@ export default function NavBar() {
       path="/auth"
       element={<AuthComponent />}
       /> */}
-
-	  </div>
     </>
 	);
 }

@@ -2,11 +2,13 @@ import React from 'react';
 import './Contact.css';
 
 export default function Contact() {
-	return <div>
-			<div className="top-part">
-				<h1>CONTACT INFORMATION</h1>
-			</div>
-
+	return (
+	<>
+	<div>
+		<div className="top-part">
+			<h1>CONTACT INFORMATION</h1>
+		</div>
+		<div className="all-container"></div>
 			<div className="team">
 				<h2>UI/UX Team</h2>
 			</div>
@@ -14,18 +16,21 @@ export default function Contact() {
 				<div>
 					<h2>Paul Chi</h2>
 					<h3>UI/UX Designer</h3>
-					<h3><a href="paulchi007@gmail.com?subject=the LEFTOver">paulchi007@gmail.com</a></h3>
+					<h3>
+					<a href="mailto:paulchi007@gmail.com?subject=the LEFTOver">paulchi007@gmail.com</a>
+
+					</h3>
 				</div>
-				<div>
-					<h2>Lexi Dong</h2>
-					<h3>UI/UX Designer</h3>
-					<h3><a href="lexidong0907@gmail.com?subject=the LEFTOver">lexidong0907@gmail.com</a></h3>
-				</div>
-				<div>
-					<h2>Hyowon Kim</h2>
-					<h3>UI/UX Designer</h3>
-					<h3><a href="w0nthelvnd@gmail.com?subject=the LEFTOver">w0nthelvnd@gmail.com</a></h3>
-				</div>
+			<div>
+				<h2>Lexi Dong</h2>
+				<h3>UI/UX Designer</h3>
+				<h3><a href="mailto:lexidong0907@gmail.com?subject=the LEFTOver">lexidong0907@gmail.com</a></h3>
+			</div>
+			<div>
+				<h2>Hyowon Kim</h2>
+				<h3>UI/UX Designer</h3>
+				<h3><a href="mailto:w0nthelvnd@gmail.com?subject=the LEFTOver">w0nthelvnd@gmail.com</a></h3>
+			</div>
 			</div>
 			<div className="team">
 				<h2>Development Team</h2>
@@ -69,4 +74,5 @@ export default function Contact() {
 				</div>
 			</div>
 		</div>;
-}
+		</>
+)}
