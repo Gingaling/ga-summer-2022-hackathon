@@ -1,7 +1,5 @@
-
- 
- header {
-    display: flex;
+header {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -10,7 +8,7 @@
   display: block;
   background-color:#772BA1;
   font-family: "Righteous", cursive;
-  border-radius: 5px;
-    text-decoration: none;
-    color:  #D4EC70;
+  border-radius: 12px;
+  text-decoration: none;
+  color:  #D4EC70;
 }

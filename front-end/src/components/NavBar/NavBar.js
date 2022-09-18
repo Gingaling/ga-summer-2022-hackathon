@@ -4,12 +4,12 @@ import { Routes, Route, Link } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import Home from '../Home/Home';
 import About from '../About/About';
-// import Posts from '../Posts/Posts';
+import Post from '../Post/Post';
 import PostsDetails from '../PostsDetails/PostsDetails';
-import Form from '../Forms/Form';
+// import Form from '../Postings/Posting';
 import Contact from '../Contact/Contact';
 import Account from '../Register/Account';
-import AuthComponent from '../AuthComponent'
+// import AuthComponent from '../AuthComponent'
 import FreeComponent from '../FreeComponent'
 // import ProtectedRoutes from "../ProtectedRoutes";
 
@@ -30,7 +30,7 @@ export default function NavBar() {
           <Link to="/about" className="LinkStyle">About the LeftOver</Link>
         </div>
         <div>
-          <Link to="/post" className="LinkStyle" id="even">Create a Post</Link>
+          <Link to="/posts" className="LinkStyle" id="even">Create a Post</Link>
         </div>
         <div>
           <Link to="/posts/:id" className="LinkStyle">Current Posts</Link>
@@ -42,7 +42,7 @@ export default function NavBar() {
           <Link to="/Contact" className="LinkStyle">Contact Us</Link>
         </div>
         <div>
-          <Link to="/Login" className="LinkStyle" id="even">Login/Register</Link>
+          <Link to="/Register" className="LinkStyle" id="even">Login/Register</Link>
         </div>
 
         {/* <div className="leftover-header"> */}
@@ -61,11 +61,11 @@ export default function NavBar() {
         element={<HomePage />}
 			/>
       <Route
-        path='/post'
-        element={<Form />}
+        path='/posts'
+        element={<Post />}
 			/>
       	<Route
-        path='/posts:id'
+        path='/posts/:id'
         element={<PostsDetails />}
 			/>
       	<Route
@@ -77,7 +77,7 @@ export default function NavBar() {
         element={<Contact />}
       />
       <Route      
-        path='/Login'
+        path='/Register'
         element={<Account />}
 			/>
        <Route

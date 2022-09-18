@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
+// import './Register.css'
 // import './Login.css';
 
 export default function Register() {
@@ -8,7 +9,7 @@ export default function Register() {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [register, setRegister] = useState(false);
+  const [register, setRegister] = useState(false);
 
   const handleSubmit = (e) => {
     // prevent the form from refreshing the whole page
@@ -16,7 +17,7 @@ export default function Register() {
 
     // set configurations
     const configuration = {
-      method: "post",
+      method: "POST",
       url: "https://hackathon-summer-2022.herokuapp.com/register",
       data: {
         userName,
@@ -28,10 +29,10 @@ export default function Register() {
     // make the API call
     axios(configuration)
       .then((result) => {
-        console.log(result);
+       setRegister(true);
       })
       .catch((error) => {
-        console.log(error);
+        error = new Error();
       });
     }
   
@@ -41,7 +42,7 @@ export default function Register() {
       <h2>Register</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
         {/* username */}
-        <Form.Group controlId="formBasicUsername">
+        <Form.Group controlId="formBasicUsername22">
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="userName"
@@ -81,16 +82,15 @@ export default function Register() {
         <Button
           variant="primary"
           type="submit"
-          onClick={(e) => handleSubmit(e)}
-        >
+          onClick={(e) => handleSubmit(e)} >
           Register
         </Button>
 
         {/* display success message */}
-        {Register ? (
+        {register ? (
           <p className="text-success">Success! You Are Registered!</p>
         ) : (
-          <p className="text-danger">You Are Not Registered</p>
+          <p className="text-danger">Are you registered and taking advantage <br /> of the many benefits available only to members?</p>
         )} 
       </Form>
     </>

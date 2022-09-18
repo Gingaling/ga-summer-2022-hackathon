@@ -30,9 +30,9 @@
 }
 
 #title-bar-how-to {
+  background-color: white;
   height: 9rem;
   font-family: 'Righteous', cursive;
-  background-color: white;
   font-size: 5rem;
   padding: 10px 0 40px 0;
   text-align: center;
@@ -44,6 +44,7 @@
 #myShareDIV {
   position: absolute;
   background-color: #D4EC70;
+  height:fit-content;
 }
 
 /* How to Respond Display */
@@ -57,7 +58,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 65px 0 0 0;
+  padding: 65px 0 20px 0;
   text-align: center;
   background-color: #d4ec70;
 }
@@ -66,7 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 65px 0 0 0;
+  padding: 65px 0 20px 10px;
   text-align: center;
   background-color: #772BA1;
 }
@@ -75,24 +76,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
-  margin: auto;
+  width: 52%;
   background-color: #d4ec70;
+  padding-bottom: 70px;
 }
 
 .respond-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
-  margin: auto;
+  width: 52%;
   background-color: #772BA1;
+  padding-bottom: 80px;
 }
 
 .primary-share-text {
   color: #772BA1;
   background-color: #d4ec70;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
   font-family: 'Righteous', cursive;
   font-size: 20px;
@@ -104,7 +105,7 @@
 .secondary-share-text {
   color: #d4ec70;
   background-color: #772BA1;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
   font-family: 'Righteous', cursive;
   font-size: 20px;
