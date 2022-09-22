@@ -3,12 +3,16 @@
     margin-top: 2rem;
 }
 
+body {
+    border: 3px solid blue;
+}
+
 h2 {
     font-size: 3rem;
 }
 
 Form {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #formBasicUserName, 

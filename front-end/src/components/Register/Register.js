@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-// import './Login.css';
 
 export default function Register() {
   // initial state
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [register, setRegister] = useState(false);
+  const [register, setRegister] = useState(false);
 
   const handleSubmit = (e) => {
     // prevent the form from refreshing the whole page
@@ -28,10 +27,10 @@ export default function Register() {
     // make the API call
     axios(configuration)
       .then((result) => {
-        console.log(result);
+       setRegister(true);
       })
       .catch((error) => {
-        console.log(error);
+        error = new Error();
       });
     }
   
@@ -81,16 +80,15 @@ export default function Register() {
         <Button
           variant="primary"
           type="submit"
-          onClick={(e) => handleSubmit(e)}
-        >
+          onClick={(e) => handleSubmit(e)} >
           Register
         </Button>
 
         {/* display success message */}
-        {Register ? (
-          <p className="text-success">Success! You Are Registered!</p>
+        {register ? (
+          <p className="text-success">You Are Registered Successfully</p>
         ) : (
-          <p className="text-danger">You Are Not Registered</p>
+          <p className="text-danger">Are you registered and taking advantage <br /> of the many benefits available only to members?</p>
         )} 
       </Form>
     </>

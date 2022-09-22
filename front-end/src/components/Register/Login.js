@@ -3,7 +3,6 @@ import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
-// import './Reg.css';
 
 export default function Login() {
   // initial state
@@ -19,7 +18,7 @@ export default function Login() {
     // set configurations
     const configuration = {
       method: "post",
-      url: "https://hackathon-summer-2022.herokuapp.com/login",
+      url: "https://ga-summer-2022-hackathon.herokuapp.com/login",
       data: {
         userName,
         email,

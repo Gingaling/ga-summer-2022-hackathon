@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Form.css';
+// import './Form.css';
 
 function Post() {
 	const navigate = useNavigate();
 	const [post, setPost] = useState({
-		userName: '',
 		topic: '',
 		title: '',
-		body: ''
+		body: '',
+		author: ''
 	});
 
 	const handleChange = event => {
@@ -20,13 +20,15 @@ function Post() {
 		event.preventDefault();
 		console.log(post);
 		axios
-			.POST('https://hackathon-summer-2022.herokuapp.com/Post', post)
+			.POST('https://ga-summer-2022-hackathon.herokuapp.com/Post', post)
 			.then(res => {
 				console.log(res);
 				if (res.status === 200) {
 					navigate('/');
 				} else {
-					alert('Oops your request was not able to submit. Please verify you have all of the required fields and try again.');
+					alert(
+						'Oops your request was not able to submit. Please verify you have all of the required fields and try again.'
+					);
 				}
 			})
 			.catch(err => console.log(err));
@@ -36,29 +38,29 @@ function Post() {
 			<div className="card-title">
 				<p className="addPost">Create Your Own Post</p>
 			</div>
-		
-
+			<div className="button-container">
+				<button class="btn success">Success</button>
+				<button class="btn info">Info</button>
+				<button class="btn warning">Warning</button>
+				<button class="btn danger">Danger</button>
+				<button class="btn default">Default</button>
+			</div>
+			
 			<div className="form-container">
 				<form onSubmit={handleSubmit} className="addForm">
 					<div className="addDetails-container">
-						<div className="userName-container">
-							<div className="userName-label">
-								<label htmlFor="userName">Username </label>
-							</div>
-							<div className="userName-input">
-								<input onChange={handleChange} type="text" id="userName" value={post.userName} placeholder="First Last" required />
-							</div>
-						</div>
-						
 						<div className="topic-container">
-							<div className="topic-label">
-								<label htmlFor="topic">Topic</label>
-							</div>
 							<div className="topic-input">
-								<input onChange={handleChange} id="topic" value={post.topic} placeholder="e.g. food, clothes, appliances..." required />
+								<div class="dropdown">
+									<button className="dropbtn">Topic (Choose One)</button>
+									<div class="dropdown-content">
+										<div>Food</div>
+										<div>Appliances</div>
+										<div>Clothes</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						
 						<div className="title-container">
 							<div className="title-label">
 								<label htmlFor="title">Title </label>
@@ -67,6 +69,7 @@ function Post() {
 								<input onChange={handleChange} id="title" value={post.title} placeholder="The Title" required />
 							</div>
 						</div>
+
 						<div className="body-container">
 							<div className="body-label">
 								<label htmlFor="body">Body of Post </label>
@@ -76,6 +79,14 @@ function Post() {
 							</div>
 						</div>
 
+						<div className="author-container">
+							<div className="author-label">
+								<label htmlFor="author">Author </label>
+							</div>
+							<div className="author-input">
+								<input onChange={handleChange} type="text" id="author" value={post.author} placeholder="First Last" required />
+							</div>
+						</div>
 
 						<div className="addPostButton-container">
 							<button type="submit" onSubmit={handleSubmit}>
@@ -87,4 +98,5 @@ function Post() {
 			</div>
 		</div>;
 }
+
 export default Post;

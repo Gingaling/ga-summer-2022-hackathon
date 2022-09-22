@@ -1,10 +1,10 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import './Registration.css';
+import './Account.css';
 import Login from './Login';
 import Register from './Register';
 
-export default function Registration() {
+export default function Account() {
 	return (
 			<Row>
 				<Col xs={12} sm={12} md={6} lg={6}>

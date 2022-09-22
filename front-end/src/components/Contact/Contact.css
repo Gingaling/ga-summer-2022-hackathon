@@ -1,16 +1,9 @@
-* {
-    background-color: white;;
-}
-
 .top-part {
-    background-color: white`;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
 .team {
-    /* display: flex;
-    flex-direction: row; */
     color: purple;
     font-style: italic;
     text-decoration-line: underline;
@@ -20,8 +13,7 @@
 .UI {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    line-height: .5rem;
+    justify-content: space-around;
     margin-bottom: 3rem;
 }
 
@@ -29,6 +21,5 @@
     margin-top: ;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    line-height: .5rem;
+    justify-content: space-around;
 }

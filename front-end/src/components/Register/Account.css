@@ -1,15 +1,7 @@
-window {
-    margin: 0 auto;
-}
-
 body {
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.reg {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+    flex-direction: column;
+    background-color: white;
+    color: black;;
+    text-align: center;
 }
