@@ -6,8 +6,14 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import Post from '../Post/Post';
 import PostsDetails from '../PostsDetails/PostsDetails';
+<<<<<<< HEAD
 import Contact from '../Contact/Contact';
 import Account from '../../Account';
+=======
+// import Form from '../Postings/Posting';
+import Contact from '../Contact/Contact';
+import Account from '../Register/Account';
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
 // import AuthComponent from '../AuthComponent'
 import FreeComponent from '../FreeComponent'
 // import ProtectedRoutes from "../ProtectedRoutes";
@@ -15,6 +21,7 @@ import FreeComponent from '../FreeComponent'
 export default function NavBar() {
 
 	return (
+<<<<<<< HEAD
     <>
     <div className="main">
     <header>
@@ -46,6 +53,42 @@ export default function NavBar() {
     </header>
     </div>
 		<div>
+=======
+    <>     
+      <header className="Menu">
+        <div>
+          <Link to="/" className="LinkStyle" id="even">Home</Link>
+        </div>
+        <div id="navigation">
+          <a href="/free">Free Component</a><br />
+          <a href="/auth">Auth Component</a>
+        </div>
+        <div>
+          <Link to="/about" className="LinkStyle">About the LeftOver</Link>
+        </div>
+        <div>
+          <Link to="/posts" className="LinkStyle" id="even">Create a Post</Link>
+        </div>
+        <div>
+          <Link to="/posts/:id" className="LinkStyle">Current Posts</Link>
+        </div>
+        <div>
+          <Link to="/HowTo" className="LinkStyle" id="even">How to Share/Respond</Link>
+        </div>
+        <div>
+          <Link to="/Contact" className="LinkStyle">Contact Us</Link>
+        </div>
+        <div>
+          <Link to="/Register" className="LinkStyle" id="even">Login/Register</Link>
+        </div>
+
+        {/* <div className="leftover-header"> */}
+        <div className="leftover">
+      The Leftover
+        </div>
+        {/* </div> */}
+      </header>
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
     <Routes>
 			<Route
         path='/about'
@@ -56,7 +99,11 @@ export default function NavBar() {
         element={<HomePage />}
 			/>
       <Route
+<<<<<<< HEAD
         path='/post'
+=======
+        path='/posts'
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
         element={<Post />}
 			/>
       	<Route
@@ -72,7 +119,11 @@ export default function NavBar() {
         element={<Contact />}
       />
       <Route      
+<<<<<<< HEAD
         path='/register'
+=======
+        path='/Register'
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
         element={<Account />}
 			/>
        <Route

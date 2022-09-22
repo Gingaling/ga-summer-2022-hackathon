@@ -3,6 +3,7 @@
 }
 
 .all-container {
+<<<<<<< HEAD
     /* background-color: #4D92F0; */
 }
 
@@ -47,6 +48,82 @@ section {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+=======
+  background-color: #4D92F0;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: #4D92F0;
+  /* border: 13px solid black; */
+  background-image: src("https://i.imgur.com/rbM2kiY.jpg");
+}
+
+h2, p.flip-title {
+  background-color: #4D92F0;
+  color: black;
+  text-align: center;
+}
+  
+.titleBar {
+  background-color: #4D92F0;
+  width: 100%;
+  line-height: 2rem;
+  vertical-align: baseline;
+  }
+  
+#right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #4D92F0;
+  line-height: 15%;
+  width: 60%;
+  margin-left: 20px;
+  padding-left: 1rem;
+}
+
+.title-bar-home {  
+  background-color: #4D92F0;
+  font-family: "Righteous", cursive;text-align: right;
+  font-size: 5rem;
+ border: 2px solid blue; 
+  float: right;
+  margin-top: 2rem;
+  /* font-weight: bolder; */
+  color: black;
+  margin-top: 20px;
+}
+
+section {
+  background-color: #4D92F0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+/* #splash-image {
+  background-color: #4D92F0;
+  width: 250%;
+  object-fit: contain;
+} */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  display: block;
+  margin: 2rem;
+  background-color: #4D92F0;
+  width: 500px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 500px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  background-color: #4D92F0;
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
   position: relative;
   width: 100%;
   height: 100%;
@@ -70,12 +147,17 @@ section {
 }
 
 /* Style the front side (fallback if image is missing) */
+<<<<<<< HEAD
 .flip-card-front {
+=======
+.flip-box-front {
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
   background-color: #4D92F0;
   color: black;
 }
 
 /* Style the back side */
+<<<<<<< HEAD
 .flip-card-back {
   background-color: #4D92F0;
   color: white;
@@ -128,6 +210,29 @@ section {
   color: white;
   transform: rotateY(180deg);
   border: 0 solid #4D92F0;
+=======
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.pic-cell {
+  display: inline-block;
+  background-color: #4D92F0;
+  width: 50%;
+}
+
+#pic-block {
+  /* display: block; */
+  background-color: #4D92F0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: auto; */
+  max-height: 100%;
+  /* object-fit: contain; */
+>>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
 }
 
 img.logo {
