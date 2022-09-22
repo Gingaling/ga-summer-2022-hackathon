@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-<<<<<<< HEAD
-=======
 // import './Register.css'
 // import './Login.css';
->>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
 
 export default function Register() {
   // initial state
@@ -45,11 +42,11 @@ export default function Register() {
       <h2>Register</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
         {/* username */}
-        <Form.Group controlId="formBasicUsername22">
+        <Form.Group controlId="formBasicUsername">
           <Form.Label>Username</Form.Label>
           <Form.Control
-            type="userName"
-            name="userName"
+            type="username"
+            name="username"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             placeholder="Enter username"
@@ -91,11 +88,7 @@ export default function Register() {
 
         {/* display success message */}
         {register ? (
-<<<<<<< HEAD
-          <p className="text-success">You Are Registered Successfully</p>
-=======
           <p className="text-success">Success! You Are Registered!</p>
->>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
         ) : (
           <p className="text-danger">Are you registered and taking advantage <br /> of the many benefits available only to members?</p>
         )} 

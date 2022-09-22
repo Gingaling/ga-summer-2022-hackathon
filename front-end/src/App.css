@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /* .App {
   text-align: center;
@@ -7,9 +6,6 @@
  
 header {
   background-color: rgb(80, 153, 205);;
-=======
-header {
->>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
   display: flex;
   flex-direction: row;
   font-family:  'Righteous', cursive;
@@ -28,16 +24,9 @@ header {
 .LinkStyle {
   padding: 5px;
   background-color:#772BA1;
-<<<<<<< HEAD
   border-radius: 5px;
     text-decoration: none;
     color:  #D4EC70;
-=======
-  font-family: "Righteous", cursive;
-  border-radius: 12px;
-  text-decoration: none;
-  color:  #D4EC70;
->>>>>>> ffca8fe70cbb21124d7b0b1b9a3ab359cc670876
 }
 
 .login {
